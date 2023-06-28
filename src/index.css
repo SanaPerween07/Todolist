@@ -1,0 +1,42 @@
+body {
+  margin: 0;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.App {
+  width: max-content;
+  margin:auto;
+  background-color: rgb(218, 167, 30);
+
+}
+
+.input:hover {
+  border-color: blueviolet;
+}
+
+.input {
+  height: 28px; 
+  width :247px ;
+  padding: 5px; 
+  margin-Right: 10px; 
+  font-Size : 26px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.addtaskbtn:hover {
+  border-color: rgb(118, 123, 189);
+}
+
+.addtaskbtn {
+  height: 28px;
+  width : 97px ;
+  padding: 5px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+

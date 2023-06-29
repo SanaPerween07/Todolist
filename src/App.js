@@ -34,36 +34,34 @@ function App() {
     justifyContent: 'center',
     width: '400px',
     padding: '10px',
-    
-    borderRadius: '5px',
+    borderRadius: '15px',
     marginBottom: '10px',
-
+    
   };
 
   
   return (
     <div className="App">
 
-      <br></br><br></br><br></br><br></br>
+      
 
       <div className="add-task">
+      
         <input className="input" value={newTask} onChange={handleChange} />
         
         <button className="addtaskbtn" onClick={addTask} >ADD TASK</button>
       </div>
 
-      <br></br><br></br><br></br>
-
       <div className="list">
-        <div>
-          {todoList.map((task, index) => (
-            <div key={index} style={listItemStyle}>
-             <span style={{ marginRight: '200px' ,fontSize: '26px', textAlign: 'center', flex: 1 , fontFamily: 'Verdana, Geneva, Tahoma, sans-serif' }}>{task}</span>
-             <img src="https://cdn1.iconfinder.com/data/icons/color-bold-style/21/56-512.png" alt="x" style={deleteIconStyle} onClick={()=>deleteTask(index)}/>
-            </div> 
+        
+        {todoList.map((task, index) => (
+          <div key={index} style={listItemStyle}>
+            <span style={{ marginRight: '200px' ,fontSize: '26px', textAlign: 'center', flex: 1 , fontFamily: 'Verdana, Geneva, Tahoma, sans-serif' }}>{task}</span>
+            <img src="https://cdn1.iconfinder.com/data/icons/color-bold-style/21/56-512.png" alt="x" style={deleteIconStyle} onClick={()=>deleteTask(index)}/>
+          </div> 
           ))}
-        </div>
       </div>
+      
 
     </div>
   );

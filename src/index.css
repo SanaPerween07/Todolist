@@ -9,15 +9,14 @@ code {
     monospace;
 }
 
-.App {
+.App{
   width: max-content;
   margin:auto;
-  background-color: rgb(218, 167, 30);
 
 }
 
 .input:hover {
-  border-color: blueviolet;
+  border-color: rgb(7, 70, 134);
 }
 
 .input {
@@ -27,10 +26,11 @@ code {
   margin-Right: 10px; 
   font-Size : 26px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  
 }
 
 .addtaskbtn:hover {
-  border-color: rgb(118, 123, 189);
+  border-color: rgb(7, 70, 134);
 }
 
 .addtaskbtn {
@@ -40,3 +40,15 @@ code {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+.add-task {
+  width : auto;
+  background-color: #64C9CF;
+  padding: 50px;
+  border-radius: 10px;
+}
+
+.list {
+  padding-top: 10px;
+  border-radius: 10px;
+  background-color:#c9f0ec;
+}

@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  padding: 0%;
+  padding: 50px;
   box-sizing: border-box;
 }
 
@@ -12,7 +12,6 @@ code {
 .App{
   width: max-content;
   margin:auto;
-
 }
 
 .input:hover {
@@ -26,7 +25,6 @@ code {
   margin-Right: 10px; 
   font-Size : 26px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  
 }
 
 .addtaskbtn:hover {
@@ -52,3 +50,13 @@ code {
   border-radius: 10px;
   background-color:#c9f0ec;
 }
+
+.listItemStyle  {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 400px;
+  padding: 10px;
+  border-radius: 15px;
+  margin-bottom: 10px;
+};

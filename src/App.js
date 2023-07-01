@@ -29,14 +29,14 @@ function App() {
     <div className="App">
 
       <div className="add-task">
-        <input className="input" value={newTask} onChange={handleChange} />
+        <input className="input" value={newTask} placeholder='Type here...' onChange={handleChange} />
         <button className="addtaskbtn" onClick={addTask} >ADD TASK</button>
       </div>
-
+    
       <div className="list">
         {todoList.map((task, index) => (
-          <div key={index} className="listItemStyle">
-            <span style={{ marginRight: '200px' ,fontSize: '26px', textAlign: 'center', flex: 1 , fontFamily: 'Verdana, Geneva, Tahoma, sans-serif' }}>{task}</span>
+          <div className="listItemStyle">
+            <span key={index} style={{ marginRight: '200px' ,fontSize: '26px', textAlign: 'center', flex: 1 , fontFamily: 'Verdana, Geneva, Tahoma, sans-serif' }}>{task}</span>
             <img src="https://cdn1.iconfinder.com/data/icons/color-bold-style/21/56-512.png" alt="x" style={deleteIconStyle} onClick={()=>deleteTask(index)}/>
           </div> 
           ))}
